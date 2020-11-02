@@ -1,0 +1,613 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{F101FFBD-A23F-4F99-BB47-7F055165299A}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>final</RootNamespace>
+    <AssemblyName>final</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icons8-Ios7-Logos-Register-Editor.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Boss.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Boss.Designer.cs">
+      <DependentUpon>Boss.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBossPic1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBossPic1.Designer.cs">
+      <DependentUpon>FormBossPic1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBossWord1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBossWord1.Designer.cs">
+      <DependentUpon>FormBossWord1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBossNum1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBossNum1.Designer.cs">
+      <DependentUpon>FormBossNum1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBossNum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBossNum.Designer.cs">
+      <DependentUpon>FormBossNum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBossWord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBossWord.Designer.cs">
+      <DependentUpon>FormBossWord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStory.Designer.cs">
+      <DependentUpon>FormStory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRandom1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRandom1.Designer.cs">
+      <DependentUpon>FormRandom1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHint.Designer.cs">
+      <DependentUpon>FormHint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInstruc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInstruc.Designer.cs">
+      <DependentUpon>FormInstruc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBossPic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBossPic.Designer.cs">
+      <DependentUpon>FormBossPic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRandom2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRandom2.Designer.cs">
+      <DependentUpon>FormRandom2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRandom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRandom.Designer.cs">
+      <DependentUpon>FormRandom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStory1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStory1.Designer.cs">
+      <DependentUpon>FormStory1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStory2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStory2.Designer.cs">
+      <DependentUpon>FormStory2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Story.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Story.Designer.cs">
+      <DependentUpon>Story.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Story1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Story1.Designer.cs">
+      <DependentUpon>Story1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Story1Ans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Story1Ans.Designer.cs">
+      <DependentUpon>Story1Ans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Story2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Story2.Designer.cs">
+      <DependentUpon>Story2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Story2Ans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Story2Ans.Designer.cs">
+      <DependentUpon>Story2Ans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StoryAns.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StoryAns.Designer.cs">
+      <DependentUpon>StoryAns.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StoryEnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StoryEnd.Designer.cs">
+      <DependentUpon>StoryEnd.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Boss.resx">
+      <DependentUpon>Boss.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBossPic1.resx">
+      <DependentUpon>FormBossPic1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBossWord1.resx">
+      <DependentUpon>FormBossWord1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBossNum1.resx">
+      <DependentUpon>FormBossNum1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBossNum.resx">
+      <DependentUpon>FormBossNum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBossWord.resx">
+      <DependentUpon>FormBossWord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStory.resx">
+      <DependentUpon>FormStory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRandom1.resx">
+      <DependentUpon>FormRandom1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHint.resx">
+      <DependentUpon>FormHint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInstruc.resx">
+      <DependentUpon>FormInstruc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBossPic.resx">
+      <DependentUpon>FormBossPic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRandom2.resx">
+      <DependentUpon>FormRandom2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRandom.resx">
+      <DependentUpon>FormRandom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStory1.resx">
+      <DependentUpon>FormStory1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStory2.resx">
+      <DependentUpon>FormStory2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Story.resx">
+      <DependentUpon>Story.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Story1.resx">
+      <DependentUpon>Story1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Story1Ans.resx">
+      <DependentUpon>Story1Ans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Story2.resx">
+      <DependentUpon>Story2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Story2Ans.resx">
+      <DependentUpon>Story2Ans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StoryAns.resx">
+      <DependentUpon>StoryAns.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StoryEnd.resx">
+      <DependentUpon>StoryEnd.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\null.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\five.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\four.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\one.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seven.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\six.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\three.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\two.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\null1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\null2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\row-1-col-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\row-1-col-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\row-1-col-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\row-1-col-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\row-2-col-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\row-2-col-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\row-2-col-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\row-2-col-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\row-3-col-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\row-3-col-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\row-3-col-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\row-3-col-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\row-4-col-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\row-4-col-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\row-4-col-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\row-4-col-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\l.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\y1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\y.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\g.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b1-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b1-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b1-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b2-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b2-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b2-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b3-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b3-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b3-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f1-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f1-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f1-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f2-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f2-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f2-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f3-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f3-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f3-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e1-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e1-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e1-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e2-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e2-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e2-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e3-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e3-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e3-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\II.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\III.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IV.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IX.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\V.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VII.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VIII.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\X.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\XI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\XII.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\XIII.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\XIV.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\XV.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\XVI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\I1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icons8-Ios7-Logos-Register-Editor.ico" />
+    <None Include="Resources\m4-4.png" />
+    <None Include="Resources\m4-3.png" />
+    <None Include="Resources\m4-2.png" />
+    <None Include="Resources\m4-1.png" />
+    <None Include="Resources\m3-4.png" />
+    <None Include="Resources\m3-3.png" />
+    <None Include="Resources\m3-2.png" />
+    <None Include="Resources\m3-1.png" />
+    <None Include="Resources\m2-4.png" />
+    <None Include="Resources\m2-3.png" />
+    <None Include="Resources\m2-2.png" />
+    <None Include="Resources\m2-1.png" />
+    <None Include="Resources\m1-4.png" />
+    <None Include="Resources\m1-3.png" />
+    <None Include="Resources\m1-2.png" />
+    <None Include="Resources\m1-1.png" />
+    <None Include="Resources\num16.png" />
+    <None Include="Resources\num15.png" />
+    <None Include="Resources\num14.png" />
+    <None Include="Resources\num13.png" />
+    <None Include="Resources\num12.png" />
+    <None Include="Resources\num11.png" />
+    <None Include="Resources\num10.png" />
+    <None Include="Resources\num9.png" />
+    <None Include="Resources\num8.png" />
+    <None Include="Resources\num7.png" />
+    <None Include="Resources\num6.png" />
+    <None Include="Resources\num5.png" />
+    <None Include="Resources\num4.png" />
+    <None Include="Resources\num3.png" />
+    <None Include="Resources\num2.png" />
+    <None Include="Resources\num1.png" />
+    <None Include="Resources\u16.png" />
+    <None Include="Resources\u15.png" />
+    <None Include="Resources\u14.png" />
+    <None Include="Resources\u13.png" />
+    <None Include="Resources\u12.png" />
+    <None Include="Resources\u11.png" />
+    <None Include="Resources\u10.png" />
+    <None Include="Resources\u9.png" />
+    <None Include="Resources\u8.png" />
+    <None Include="Resources\u7.png" />
+    <None Include="Resources\u6.png" />
+    <None Include="Resources\u5.png" />
+    <None Include="Resources\u4.png" />
+    <None Include="Resources\u3.png" />
+    <None Include="Resources\u2.png" />
+    <None Include="Resources\u1.png" />
+    <None Include="Resources\y11.png" />
+    <None Include="Resources\v1.png" />
+    <None Include="Resources\o1.png" />
+    <None Include="Resources\n2.png" />
+    <None Include="Resources\L1.png" />
+    <None Include="Resources\h1.png" />
+    <None Include="Resources\z1.png" />
+    <None Include="Resources\z.png" />
+    <None Include="Resources\u.png" />
+    <None Include="Resources\n1.png" />
+    <None Include="Resources\k.png" />
+    <None Include="Resources\j.png" />
+    <None Include="Resources\f.png" />
+    <None Include="Resources\d.png" />
+    <None Include="Resources\b.png" />
+    <None Include="Resources\a.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
